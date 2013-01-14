@@ -13,14 +13,18 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container-fluid">
-            <html:link href="EmployeeList.do" styleClass="brand">
-                <bean:message key="header.title"/>
-            </html:link>
-            <p class="text-success">
-                <bean:message key="header.time"/>
-                ${EmployeesForm.time}
-                <bean:message key="header.time.ms"/>
-            </p>
+            <ul class="nav">
+                <li class="active">
+                    <html:link href="EmployeeList.do" styleClass="brand">
+                        <bean:message key="header.title"/>
+                    </html:link>
+                </li>
+                <p class="text-success">
+                    <bean:message key="header.time"/>
+                    ${EmployeesForm.time}
+                    <bean:message key="header.time.ms"/>
+                </p>
+            </ul>
         </div>
     </div>
 </div>
