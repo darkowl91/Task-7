@@ -23,7 +23,7 @@ public class EmployeeDAO implements IEmployeeDAO<Employee> {
     private static final String LIST ="employeeList";
 
     @Override
-    public List<Employee> getAll() {
+    public List<Employee> getRecords() {
         Session session = HibernateUtil.getSession();
         List<Employee> employees;
         Transaction transaction = null;

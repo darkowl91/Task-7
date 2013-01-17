@@ -13,5 +13,5 @@ import java.util.List;
  */
 public interface IEmployeeDAO<T extends Entity> {
 
-    public List<T> getAll();
+    public List<T> getRecords();
 }

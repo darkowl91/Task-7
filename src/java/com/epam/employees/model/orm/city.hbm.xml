@@ -11,11 +11,10 @@
         <property name="title" column="TITLE"/>
   
         <many-to-one name="country"  
-                     class="com.epam.employees.model.Country" 	
-                     column="COUNTRY_ID"
-                     not-null="true" 
-                     outer-join="true"/>
-    
+                               class="com.epam.employees.model.Country" 	
+                               column="COUNTRY_ID"
+                               not-null="true" 
+                               outer-join="true"/>
     </class>
         
 </hibernate-mapping>

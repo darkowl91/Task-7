@@ -11,15 +11,15 @@
         </id>
         
         <many-to-one name="office"
-                     class="com.epam.employees.model.Office"
-                     column="OFFICE_ID"
-                     not-null="true"
-                     fetch="join"/>
+                               class="com.epam.employees.model.Office"
+                               column="OFFICE_ID"
+                               not-null="true"
+                               fetch="join"/>
                      
         <many-to-one name="position"  
-                     class="com.epam.employees.model.Position" 	
-                     column="POSITION_ID"
-                     outer-join="true"
-                     not-null="true"/>
+                               class="com.epam.employees.model.Position" 	
+                               column="POSITION_ID"
+                               outer-join="true"
+                               not-null="true"/>
     </class>
 </hibernate-mapping>

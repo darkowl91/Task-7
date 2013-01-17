@@ -9,16 +9,16 @@
         </id>
         
         <many-to-one name="company"
-                     column="COMPANY_ID" 
-                     class="com.epam.employees.model.Company" 
-                     not-null="true" 
-                     fetch="join"/> 
+                               column="COMPANY_ID" 
+                               class="com.epam.employees.model.Company" 
+                               not-null="true" 
+                               fetch="join"/> 
                      
         <many-to-one column="ADDRESS_ID" 
-                     name="address" 
-                     class="com.epam.employees.model.Address" 
-                     not-null="true" 
-                     fetch="join"/>        
+                               name="address" 
+                               class="com.epam.employees.model.Address" 
+                               not-null="true" 
+                               fetch="join"/>        
         
         <property name="countOfEmployees" lazy="false">
             <formula>(SELECT COUNT(*) FROM EMPLOYEES.WORK WHERE WORK.OFFICE_ID=ID)</formula> 

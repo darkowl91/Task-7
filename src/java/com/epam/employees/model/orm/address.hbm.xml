@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd//hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
+    
     <class batch-size="100" name="com.epam.employees.model.Address" table="ADDRESS">
         <id column="ID" name="id">
             <generator class="sequence">
@@ -8,16 +9,15 @@
             </generator>
         </id>
     
-        <property name="street" column="STREET"/>
+        <property name="street"    column="STREET"/>
         <property name="building" column="BUILDING"/>
-        <property name="room" column="ROOM"/>
+        <property name="room"     column="ROOM"/>
     
         <many-to-one name="city" 
-                     column="CITY_ID" 
-                     class="com.epam.employees.model.City" 
-                     not-null="true"  
-                     outer-join="true" />
-    
+                               column="CITY_ID" 
+                               class="com.epam.employees.model.City" 
+                               not-null="true"  
+                               outer-join="true" />
     </class>
   
 </hibernate-mapping>

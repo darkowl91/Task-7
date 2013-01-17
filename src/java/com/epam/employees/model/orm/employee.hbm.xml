@@ -20,15 +20,14 @@
         </set>
         
         <many-to-one column="ID" 
-                     name="address" 
-                     class="com.epam.employees.model.Address" 
-                     not-null="true" 
-                     outer-join="true" 
-                     unique="true"
-                     insert="false" 
-                     update="false"
-                     lazy="false"/>
-
+                               name="address" 
+                               class="com.epam.employees.model.Address" 
+                               not-null="true" 
+                               outer-join="true" 
+                               unique="true"
+                               insert="false" 
+                               update="false"
+                               lazy="false"/>
     </class>
     <query name="employeeList">
 	<![CDATA[FROM Employee as employee order by employee.id]]>
